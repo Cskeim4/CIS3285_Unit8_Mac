@@ -35,7 +35,7 @@ namespace CIS3285_Unit8_Tests
         public void TestOneGoodTrade()
         {
             //Arrange
-            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.goodtrades1.txt");
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.goodTrades1.txt");
             var tradeProcessor = new TradeProcessor();
 
             //Act
@@ -52,7 +52,7 @@ namespace CIS3285_Unit8_Tests
         public void NegativeTradeAmountNotAllowed()
         {
             //Arrange
-            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.negativetrades1.txt");
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.negativeTrades1.txt");
             var tradeProcessor = new TradeProcessor();
 
             //Act
@@ -66,16 +66,36 @@ namespace CIS3285_Unit8_Tests
 
         //Process Trades Unit Test #2
         [TestMethod]
-        public void CanParseTrades()
+        public void incompleteNumbersInTrade()
         {
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.incompleteTradeNumbers1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
+
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore, countAfter);
         }
 
         //Process Trades Unit Test #3
         [TestMethod]
-        public void CanStoreTrades()
+        public void incompleteStringInTrade()
         {
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.incompleteTradeString1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
+
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore, countAfter);
         }
 
         //Process Trades Unit Test #4
@@ -83,7 +103,7 @@ namespace CIS3285_Unit8_Tests
         public void CanProcessManyTrades()
         {
             //Arrange
-            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.manytrades1.txt");
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.manyTrades1.txt");
             var tradeProcessor = new TradeProcessor();
 
             //Act
@@ -97,16 +117,36 @@ namespace CIS3285_Unit8_Tests
 
         //Read Trade Data Unit Test #1
         [TestMethod]
-        public void CorrectNumberOfTradeParameters()
+        public void ReadEmptyTradeFile()
         {
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.emptyTradesFile1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
+
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore, countAfter);
         }
 
         //Read Trade Data Unit Test #2
         [TestMethod]
-        public void TradeParametersAreCorrectDataType()
+        public void TradeParametersCorrectOrder()
         {
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.incorrectTradeParameterOrder1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
+
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore, countAfter);
         }
     }
 }

@@ -24,6 +24,6 @@
     <None Remove="goodtrades1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="goodtrades1.txt" />
+    <EmbeddedResource Include="goodTrades1.txt" />
   </ItemGroup>
 </Project>
