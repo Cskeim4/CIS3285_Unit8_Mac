@@ -10,11 +10,6 @@ namespace CIS3285_Unit8_Tests
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
-
 
         private int CountDbRecords()
         {
@@ -52,6 +47,53 @@ namespace CIS3285_Unit8_Tests
             Assert.AreEqual(countBefore + 1, countAfter);
         }
 
+        //Process Trades Unit Test #1
+        [TestMethod]
+        public void NegativeTradeAmountNotAllowed()
+        {
+            // Arrange    
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.goodtrades1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            // Act
+
+
+            // Assert
+            Assert.AreEqual(trade.tradeAmount < 0);
+        }
+
+        //Process Trades Unit Test #2
+        [TestMethod]
+        public void CanParseTrades()
+        {
+
+        }
+
+        //Process Trades Unit Test #3
+        [TestMethod]
+        public void CanStoreTrades()
+        {
+
+        }
+
+        //Process Trades Unit Test #4
+
+
+
+
+
+        //Read Trade Data Unit Test #1
+        [TestMethod]
+        public void CorrectNumberOfTradeParameters()
+        {
+
+        }
+
+        //Read Trade Data Unit Test #2
+        [TestMethod]
+        public void TradeParametersAreCorrectDataType()
+        {
+
+        }
     }
 }
