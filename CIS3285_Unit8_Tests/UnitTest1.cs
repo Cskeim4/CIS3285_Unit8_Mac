@@ -31,7 +31,6 @@ namespace CIS3285_Unit8_Tests
             }
         }
 
-
         [TestMethod()]
         public void TestOneGoodTrade()
         {
@@ -42,6 +41,7 @@ namespace CIS3285_Unit8_Tests
             //Act
             int countBefore = CountDbRecords();
             tradeProcessor.ProcessTrades(tradeStream);
+
             //Assert
             int countAfter = CountDbRecords();
             Assert.AreEqual(countBefore + 1, countAfter);
@@ -51,15 +51,17 @@ namespace CIS3285_Unit8_Tests
         [TestMethod]
         public void NegativeTradeAmountNotAllowed()
         {
-            // Arrange    
-            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.goodtrades1.txt");
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.negativetrades1.txt");
             var tradeProcessor = new TradeProcessor();
 
-            // Act
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
 
-
-            // Assert
-            Assert.AreEqual(trade.tradeAmount < 0);
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore, countAfter);
         }
 
         //Process Trades Unit Test #2
@@ -77,10 +79,21 @@ namespace CIS3285_Unit8_Tests
         }
 
         //Process Trades Unit Test #4
+        [TestMethod]
+        public void CanProcessManyTrades()
+        {
+            //Arrange
+            var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.manytrades1.txt");
+            var tradeProcessor = new TradeProcessor();
 
+            //Act
+            int countBefore = CountDbRecords();
+            tradeProcessor.ProcessTrades(tradeStream);
 
-
-
+            //Assert
+            int countAfter = CountDbRecords();
+            Assert.AreEqual(countBefore + 10, countAfter);
+        }
 
         //Read Trade Data Unit Test #1
         [TestMethod]
