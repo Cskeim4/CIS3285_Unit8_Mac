@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj",
+        "projectName": "CIS3285_Unit8_Mac",
+        "projectPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj",
+        "packagesPath": "/Users/maryjogibbons/.nuget/packages/",
+        "outputPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maryjogibbons/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
+        "projectName": "CIS3285_Unit8_Tests",
+        "projectPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
+        "packagesPath": "/Users/maryjogibbons/.nuget/packages/",
+        "outputPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/maryjogibbons/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj": {
+                "projectPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
