@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    ".NETCoreApp,Version=v3.1": {
       "coverlet.collector/3.1.2": {
         "type": "package",
         "build": {
@@ -1783,7 +1783,7 @@
       },
       "CIS3285_Unit8_Mac/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "System.Data.SqlClient": "4.8.4"
         },
@@ -6636,7 +6636,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    ".NETCoreApp,Version=v3.1": [
       "CIS3285_Unit8_Mac >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
@@ -6646,32 +6646,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/maryjogibbons/.nuget/packages/": {}
+    "/Users/c.skeim/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
+      "projectUniqueName": "/Users/c.skeim/Documents/GitHub/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
       "projectName": "CIS3285_Unit8_Tests",
-      "projectPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
-      "packagesPath": "/Users/maryjogibbons/.nuget/packages/",
-      "outputPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/obj/",
+      "projectPath": "/Users/c.skeim/Documents/GitHub/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/CIS3285_Unit8_Tests.csproj",
+      "packagesPath": "/Users/c.skeim/.nuget/packages/",
+      "outputPath": "/Users/c.skeim/Documents/GitHub/CIS3285_Unit8_Mac/CIS3285_Unit8_Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/maryjogibbons/.nuget/NuGet/NuGet.Config"
+        "/Users/c.skeim/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj": {
-              "projectPath": "/Users/maryjogibbons/Projects/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj"
+            "/Users/c.skeim/Documents/GitHub/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj": {
+              "projectPath": "/Users/c.skeim/Documents/GitHub/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac/CIS3285_Unit8_Mac.csproj"
             }
           }
         }
@@ -6683,8 +6683,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -6713,8 +6713,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -6723,7 +6722,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }
