@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS3285_Unit8_Mac", "CIS3285_Unit8_Mac\CIS3285_Unit8_Mac.csproj", "{2BBE638B-2402-4982-BC10-139821DD7D11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS3285_Unit8_Tests", "CIS3285_Unit8_Tests\CIS3285_Unit8_Tests.csproj", "{10284D6F-C87C-44AE-84E4-C2F606BDB8C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2BBE638B-2402-4982-BC10-139821DD7D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BBE638B-2402-4982-BC10-139821DD7D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BBE638B-2402-4982-BC10-139821DD7D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10284D6F-C87C-44AE-84E4-C2F606BDB8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10284D6F-C87C-44AE-84E4-C2F606BDB8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10284D6F-C87C-44AE-84E4-C2F606BDB8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10284D6F-C87C-44AE-84E4-C2F606BDB8C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
