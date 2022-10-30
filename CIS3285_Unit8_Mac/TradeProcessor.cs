@@ -40,6 +40,7 @@ namespace CIS3285_Unit8_Mac
         /// <returns> true if all the checks pass </returns>
         private bool ValidateTradeData(String[] fields, int currentLine)
         {
+
             if (fields.Length != 3)
             {
                 LogMessage("WARN: Line {0} malformed. Only {1} field(s) found.", currentLine, fields.Length);
@@ -49,6 +50,13 @@ namespace CIS3285_Unit8_Mac
             if (fields[0].Length != 6)
             {
                 LogMessage("WARN: Trade currencies on line {0} malformed: '{1}'", currentLine, fields[0]);
+                return false;
+            }
+
+            //Check if fields contains a negative
+            if (fields[1].Contains("-") || fields[2].Contains("-"))
+            {
+                LogMessage("WARN: Negative found in the text, negative numbers are not allowed.");
                 return false;
             }
 
@@ -65,6 +73,11 @@ namespace CIS3285_Unit8_Mac
                 LogMessage("WARN: Trade price on line {0} not a valid decimal: '{1}'", currentLine, fields[2]);
                 return false;
             }
+            //if (tradePrice < 0)
+            //{
+            //    LogMessage("WARN: Trade price on line {0} not a valid decimal: '{1}'", currentLine, fields[2]);
+            //    return false;
+            //}
             return true;
         }
 
