@@ -17,7 +17,7 @@ namespace CIS3285_Unit8_Mac
         /// </summary>
         /// <param name="stream"> File must be passed in as a Stream. </param>
         /// <returns> Returns a list of strings, one for each string for each line in the file </returns>
-        private IEnumerable<string> ReadTradeData(Stream stream)
+        public IEnumerable<string> ReadTradeData(Stream stream)
         {
             // read rows
             List<string> lines = new List<string>();

@@ -22,8 +22,20 @@
   <ItemGroup>
     <None Remove="System.Data.SqlClient" />
     <None Remove="goodtrades1.txt" />
+    <None Remove="emptyTradesFile1.txt" />
+    <None Remove="negativeTrades1.txt" />
+    <None Remove="manyTrades1.txt" />
+    <None Remove="incorrectTradeParameterOrder1.txt" />
+    <None Remove="incompleteTradeString1.txt" />
+    <None Remove="incompleteTradeNumbers1.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="goodTrades1.txt" />
+    <EmbeddedResource Include="emptyTradesFile1.txt" />
+    <EmbeddedResource Include="negativeTrades1.txt" />
+    <EmbeddedResource Include="manyTrades1.txt" />
+    <EmbeddedResource Include="incorrectTradeParameterOrder1.txt" />
+    <EmbeddedResource Include="incompleteTradeString1.txt" />
+    <EmbeddedResource Include="incompleteTradeNumbers1.txt" />
   </ItemGroup>
 </Project>
