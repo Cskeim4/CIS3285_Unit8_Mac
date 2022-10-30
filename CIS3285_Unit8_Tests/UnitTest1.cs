@@ -112,7 +112,7 @@ namespace CIS3285_Unit8_Tests
 
             //Assert
             int countAfter = CountDbRecords();
-            Assert.AreEqual(countBefore + 10, countAfter);
+            Assert.AreEqual(countBefore + 1, countAfter);
         }
 
         //Read Trade Data Unit Test #1
