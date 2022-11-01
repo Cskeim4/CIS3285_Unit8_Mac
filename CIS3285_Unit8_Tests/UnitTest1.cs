@@ -36,7 +36,7 @@ namespace CIS3285_Unit8_Tests
         {
             //Arrange
             var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("CIS3285_Unit8_Tests.goodTrades1.txt");
-            var tradeProcessor = new TradeProcessor(ITradeDataProvider myDataProvider, ITradeParser myTradeParser, ITradeStorage myTradeStorage);
+            var tradeProcessor = new TradeProcessor();
 
             //Act
             int countBefore = CountDbRecords();
