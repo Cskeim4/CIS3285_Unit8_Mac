@@ -12,27 +12,6 @@ namespace CIS3285_Unit8_Mac
         const float LotSize = 100000f;
 
         /// <summary>
-        /// Read the text file containing the trades. This file should in in the format of one trade per line
-        ///    GBPUSD,1000,1.51
-        /// </summary>
-        /// <param name="stream"> File must be passed in as a Stream. </param>
-        /// <returns> Returns a list of strings, one for each string for each line in the file </returns>
-        public IEnumerable<string> ReadTradeData(Stream stream)
-        {
-            // read rows
-            List<string> lines = new List<string>();
-            using (var reader = new StreamReader(stream))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    lines.Add(line);
-                }
-            }
-            return lines;
-        }
-
-        /// <summary>
         /// Checks the formate on a single line in the trade file.
         /// </summary>
         /// <param name="fields"> The string must be split into three components before calling </param>
@@ -190,7 +169,9 @@ namespace CIS3285_Unit8_Mac
         /// <param name="stream"> The text file contianing the trade data </param>
         public void ProcessTrades(Stream stream)
         {
-            var lines = ReadTradeData(stream);
+            TradeDataProvider myDataProvider = new TradeDataProvider(stream);
+            var lines = myDataProvider.ReadTradeData();
+
             var trades = ParseTrades(lines);
             StoreTrades(trades);
         }
